@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import HelloWorld from "indexjsx";
+import HelloWorld from "src/index.jsx";
 
 class Container extends React.Component { 
     render() { 
