@@ -8,7 +8,8 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 })
 
 module.exports = {
-    entry: __dirname +  "/src",
+    // entry: __dirname +  "/src",
+    entry: path.resolve(__dirname, 'src', 'index.jsx'),
     output: {
         path: __dirname + '/docs',
         filename: 'bundle.js'
@@ -30,44 +31,4 @@ module.exports = {
     plugins: [HtmlWebpackPluginConfig]
 };
 
-
-
-
-
-// module.exports = {
-//     entry: {
-//         index: [
-//             './src/index.jsx',
-//             './src/style.css'
-//         ],
-//         menu: './components/menu.jsx',
-//         services: './components/services.jsx',
-//         header: './components/header.jsx',
-//         specials: './components/specials.jsx',
-//     },
-//     output: {
-//         filename: '[name].js',
-//         path: __dirname + "/docs",
-//     },
-//     resolve: {
-//         extensions: [".ts", ".tsx", ".js", ".jsx", ".json"]
-//     },
-//     module: {
-//         rules: [
-//             // rules for modules (configure loaders, parser options, etc.)
-//             { test: /\.tsx?$/, loader: "awesome-typescript-loader" },
-//             { enforce: "pre", test: /\.js$/, loader: "source-map-loader" },
-//             {
-//                 test: /\.jsx?$/,
-//                 loader: "babel-loader",
-//                 options: {
-//                     presets: ["react"] //"es2015"]
-//                 },
-//             },
-//             { test: /\.css$/, loader: "style-loader!css-loader" },
-//         ],
-//     },
-//     // plugins: [HtmlWebpackPluginConfig],
-//     devtool: '#source-map',
-// };
 

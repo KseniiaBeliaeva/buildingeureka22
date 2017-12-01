@@ -1,11 +1,19 @@
 import React from 'react';
-export class HelloWorld extends Component {
+import ReactDOM from "react-dom";
+import Container from "./components/container";
+
+
+class Main extends React.Component {
     render() {
         return (
-            <div className="hello-world">
-                <h1>Hello World</h1>
+            <div>
+                <Container />
+             <h1>Back</h1>
             </div>
         );
     }
 }
-export default HelloWorld;
+
+
+
+ReactDOM.render(<Main />, document.getElementById('root'));
