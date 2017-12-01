@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from "react-dom";
 import Container from "./container/container";
-import styles from './styles.css';
+import Menu from "./menu/menu";
+import './styles.css';
 
 
 class Main extends React.Component {
@@ -9,6 +10,7 @@ class Main extends React.Component {
         return (
             <div>
                 <Container />
+                <Menu />
             </div>
         );
     }
