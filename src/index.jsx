@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from "react-dom";
-import Container from "./components/container";
+import Container from "./components/container/container";
+import styles from './styles.css';
 
 
 class Main extends React.Component {
@@ -8,7 +9,6 @@ class Main extends React.Component {
         return (
             <div>
                 <Container />
-             <h1>Back</h1>
             </div>
         );
     }
