@@ -10,7 +10,6 @@ class Main extends React.Component {
         return (
             <div>
                 <Container />
-                <Menu />
             </div>
         );
     }

@@ -1,4 +1,13 @@
 #menu > button {
     border: none;
     color: pink;
+    float: right !important;
 }
+#nav_menu {
+        background-color: #e3f2fd;
+        width: 100%;
+        float: right;
+    }
+/* .nav_menu-link {
+
+} */

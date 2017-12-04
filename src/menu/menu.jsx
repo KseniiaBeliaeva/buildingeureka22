@@ -7,10 +7,11 @@ export default class Menu extends React.Component {
     render() {
         return (
             <div className="row" id="menu">
-                <div className="col-sm-6"></div>    
-                <button className="col-sm-2">Plan</button>
-                <button className="col-sm-2">News</button>
-                <button className="col-sm-2">Photos</button>
+                <nav className="navbar navbar-light bg-faded navbar-expand-md justify-content-end" id="nav_menu" role="navigation" >
+                    <a href="#menu" className="navbar-brand nav-link nav_menu-link">Updates</a>
+                    <a href="#menu" className="navbar-brand nav-link nav_menu-link">Photos</a>
+                    <a href="#menu" className="navbar-brand nav-link nav_menu-link">Plans</a>
+                </nav>
             </div>
         )
     }
