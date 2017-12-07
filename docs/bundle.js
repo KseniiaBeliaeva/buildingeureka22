@@ -1484,7 +1484,7 @@ var Menu = function (_React$Component) {
                     { className: "navbar navbar-light bg-dark navbar-expand-md", id: "nav_menu", role: "navigation" },
                     _react2.default.createElement(
                         "a",
-                        { href: "#menu", className: "navbar-brand nav-link nav_menu-link text-white justify-content-start" },
+                        { href: "#menu", className: "navbar-nav nav-link nav_menu-link text-white justify-content-start" },
                         "Eureka 22"
                     ),
                     _react2.default.createElement(
