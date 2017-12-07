@@ -1,7 +1,12 @@
 img {
-    width: 80%;
-    margin: 15px 0;
+    width: 100%;
 }
-/* .wrap { 
-    text-align: center;
-} */ 
+.col-sm-6 {
+ padding: 0;
+ text-align: left !important;
+ margin: 15px 0;
+}
+.wrap-text {
+    padding: 0 10px;
+    text-align: left !important;
+}
