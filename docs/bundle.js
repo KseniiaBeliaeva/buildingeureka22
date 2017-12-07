@@ -1481,20 +1481,25 @@ var Menu = function (_React$Component) {
                 { className: "row", id: "menu" },
                 _react2.default.createElement(
                     "nav",
-                    { className: "navbar navbar-light bg-faded navbar-expand-md justify-content-end", id: "nav_menu", role: "navigation" },
+                    { className: "navbar navbar-light bg-dark navbar-expand-md", id: "nav_menu", role: "navigation" },
                     _react2.default.createElement(
                         "a",
-                        { href: "#menu", className: "navbar-brand nav-link nav_menu-link" },
+                        { href: "#menu", className: "navbar-brand nav-link nav_menu-link text-white justify-content-start" },
+                        "Eureka 22"
+                    ),
+                    _react2.default.createElement(
+                        "a",
+                        { href: "#menu", className: "navbar-nav nav-link nav_menu-link text-white" },
                         "Updates"
                     ),
                     _react2.default.createElement(
                         "a",
-                        { href: "#menu", className: "navbar-brand nav-link nav_menu-link" },
+                        { href: "#menu", className: "navbar-nav nav-link nav_menu-link text-white " },
                         "Photos"
                     ),
                     _react2.default.createElement(
                         "a",
-                        { href: "#menu", className: "navbar-brand nav-link nav_menu-link" },
+                        { href: "#menu", className: "navbar-nav nav-link nav_menu-link text-white " },
                         "Plans"
                     )
                 )
@@ -1560,6 +1565,10 @@ var _menu = __webpack_require__(17);
 
 var _menu2 = _interopRequireDefault(_menu);
 
+var _wrapper = __webpack_require__(39);
+
+var _wrapper2 = _interopRequireDefault(_wrapper);
+
 __webpack_require__(36);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -1584,8 +1593,9 @@ var Main = function (_React$Component) {
         value: function render() {
             return _react2.default.createElement(
                 "div",
-                null,
-                _react2.default.createElement(_container2.default, null)
+                { className: "container" },
+                _react2.default.createElement(_menu2.default, null),
+                _react2.default.createElement(_wrapper2.default, null)
             );
         }
     }]);
@@ -18912,7 +18922,11 @@ var Container = function (_React$Component) {
                     null,
                     "Eureka22 by Homebuyers Center"
                 ),
-                _react2.default.createElement(_menu2.default, null)
+                _react2.default.createElement(
+                    "a",
+                    { href: "https://vic.homebuyers.com.au/sites/default/files/home_design/slab_brochure/EUREKA22.pdf" },
+                    "Brochure"
+                )
             );
         }
     }]);
@@ -19139,6 +19153,117 @@ exports.push([module.i, "", ""]);
 
 // exports
 
+
+/***/ }),
+/* 39 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(8);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+__webpack_require__(40);
+
+var _eureka = __webpack_require__(42);
+
+var _eureka2 = _interopRequireDefault(_eureka);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Wrapper = function (_React$Component) {
+    _inherits(Wrapper, _React$Component);
+
+    function Wrapper() {
+        _classCallCheck(this, Wrapper);
+
+        return _possibleConstructorReturn(this, (Wrapper.__proto__ || Object.getPrototypeOf(Wrapper)).apply(this, arguments));
+    }
+
+    _createClass(Wrapper, [{
+        key: "render",
+        value: function render() {
+            return _react2.default.createElement(
+                "div",
+                { className: "wrap text-center" },
+                _react2.default.createElement("img", { src: _eureka2.default, alt: "Eureka 22 traditional design", className: "wrap__img" })
+            );
+        }
+    }]);
+
+    return Wrapper;
+}(_react2.default.Component);
+
+exports.default = Wrapper;
+
+/***/ }),
+/* 40 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(41);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {"hmr":true}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(9)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../node_modules/css-loader/index.js!./wrapper.css", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!./wrapper.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 41 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(5)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "img {\n    width: 80%;\n    margin: 15px 0;\n}\n/* .wrap { \n    text-align: center;\n} */ ", ""]);
+
+// exports
+
+
+/***/ }),
+/* 42 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "3b1b8da73778a0da60a489c5e78b863d.jpg";
 
 /***/ })
 /******/ ]);

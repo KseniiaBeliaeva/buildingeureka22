@@ -8,7 +8,6 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 })
 
 module.exports = {
-    // entry: __dirname +  "/src",
     entry: path.resolve(__dirname, 'src', 'index.jsx'),
     output: {
         path: __dirname + '/docs',
@@ -31,9 +30,22 @@ module.exports = {
                 loaders: ['style-loader', 'css-loader'],
             },
 
+    //         {
+    //             test: /\.(jpe?g|png|gif|svg)$/i,
+    //             use:
+    //                 "file-loader?name=src/wrapper/[name].[ext]"
+    //         },
+            {
+                test: /\.(png|jpg|gif|jpe?g)$/i,
+                use: [
+                    {
+                        loader: 'file-loader?name=src/wrapper/[name].[ext]',
+                        options: {}
+                    }
+                ]
+            }
         ]
     },
-    
     plugins: [HtmlWebpackPluginConfig]
 };
 
