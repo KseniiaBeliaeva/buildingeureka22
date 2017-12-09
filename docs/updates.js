@@ -19246,7 +19246,7 @@ exports = module.exports = __webpack_require__(3)(undefined);
 
 
 // module
-exports.push([module.i, ".dates-block::after {\n  content: \"\";\n  display: table;\n  clear: both;\n}\n.dates-block {\n  margin-top: 10px;\n}\n.dates-img {\n  width:640px;\n  height:426px;\n}\n", ""]);
+exports.push([module.i, ".dates-block::after {\n  content: \"\";\n  display: table;\n  clear: both;\n}\n.dates-block {\n  margin-top: 10px;\n}\n.dates-img {\nwidth: 100%;\n}\n", ""]);
 
 // exports
 
