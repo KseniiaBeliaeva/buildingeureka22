@@ -4,6 +4,9 @@ import "./dates.css";
 import contractimg from "./signing-contract.jpg";
 import titleimg from "./title.jpg";
 import streetsign from "./streetsign.jpg";
+import upd1 from "./upd1.jpg";
+import upd2 from "./upd2.jpg";
+
 
 var updNews = [
     {
@@ -43,7 +46,8 @@ var updNews = [
         date: "07.12.17",
         dateText: "The gates are open, we can finally visit our block",
         nextStep: "Waiting for settlement in 14 days",
-        dateImage: contractimg,
+        dateImage: upd1,
+        dateImage2: upd2,
     },
     
 
@@ -56,7 +60,10 @@ export default class Dates extends React.Component {
                     <h3 className="text-success">{news.date}</h3>
                     <p>{news.dateText}</p>
                     <p className="">{news.nextStep}</p>
+                    <div className="row col">
                     <img src={news.dateImage} alt="Signing contract image" className="img-fluid rounded max-width: 100%; height:auto; dates-img" />
+                    <img src={news.dateImage2} className="img-fluid rounded max-width: 100%; height:auto; dates-img" />
+                    </div>
                 </div>
             )
         );

@@ -19087,9 +19087,17 @@ var _title = __webpack_require__(49);
 
 var _title2 = _interopRequireDefault(_title);
 
-var _streetsign = __webpack_require__(51);
+var _streetsign = __webpack_require__(50);
 
 var _streetsign2 = _interopRequireDefault(_streetsign);
+
+var _upd = __webpack_require__(51);
+
+var _upd2 = _interopRequireDefault(_upd);
+
+var _upd3 = __webpack_require__(52);
+
+var _upd4 = _interopRequireDefault(_upd3);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -19128,7 +19136,8 @@ var updNews = [{
     date: "07.12.17",
     dateText: "The gates are open, we can finally visit our block",
     nextStep: "Waiting for settlement in 14 days",
-    dateImage: _signingContract2.default
+    dateImage: _upd2.default,
+    dateImage2: _upd4.default
 }];
 
 var Dates = function (_React$Component) {
@@ -19162,7 +19171,12 @@ var Dates = function (_React$Component) {
                         { className: "" },
                         news.nextStep
                     ),
-                    _react2.default.createElement("img", { src: news.dateImage, alt: "Signing contract image", className: "img-fluid rounded max-width: 100%; height:auto; dates-img" })
+                    _react2.default.createElement(
+                        "div",
+                        { className: "row col" },
+                        _react2.default.createElement("img", { src: news.dateImage, alt: "Signing contract image", className: "img-fluid rounded max-width: 100%; height:auto; dates-img" }),
+                        _react2.default.createElement("img", { src: news.dateImage2, className: "img-fluid rounded max-width: 100%; height:auto; dates-img" })
+                    )
                 );
             });
         }
@@ -19231,11 +19245,22 @@ module.exports = __webpack_require__.p + "c79d6fea3e10a036119c213ea37de29e.jpg";
 module.exports = __webpack_require__.p + "37fb07fec5f69b227761be02e00a9278.jpg";
 
 /***/ }),
-/* 50 */,
-/* 51 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "2ea8e49abd74a02b579152e6849868e4.jpg";
+
+/***/ }),
+/* 51 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "d4a6a923407de599a4a2744d64f5afe9.jpg";
+
+/***/ }),
+/* 52 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "b4452eef73668766456809818418c557.jpg";
 
 /***/ })
 /******/ ]);
