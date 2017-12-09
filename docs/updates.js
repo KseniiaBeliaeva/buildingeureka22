@@ -19099,6 +19099,10 @@ var _upd3 = __webpack_require__(52);
 
 var _upd4 = _interopRequireDefault(_upd3);
 
+var _builders = __webpack_require__(53);
+
+var _builders2 = _interopRequireDefault(_builders);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -19106,6 +19110,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 var updNews = [{
     date: "01.02.17",
@@ -19132,12 +19138,16 @@ var updNews = [{
     dateText: "The land lot has been titled",
     nextStep: " Waiting for settlement in 14 days",
     dateImage: _streetsign2.default
-}, {
+}, _defineProperty({
     date: "07.12.17",
     dateText: "The gates are open, we can finally visit our block",
     nextStep: "Waiting for settlement in 14 days",
-    dateImage: _upd2.default,
-    dateImage2: _upd4.default
+    dateImage: _upd2.default
+}, "dateImage", _upd4.default), {
+    date: "07.12.17",
+    dateText: "Paper preparations",
+    nextStep: "Waiting for start in 2-3 months",
+    dateImage: _builders2.default
 }];
 
 var Dates = function (_React$Component) {
@@ -19162,21 +19172,30 @@ var Dates = function (_React$Component) {
                         news.date
                     ),
                     _react2.default.createElement(
+                        "mark",
+                        { className: "" },
+                        "News:"
+                    ),
+                    _react2.default.createElement(
                         "p",
                         null,
                         news.dateText
                     ),
                     _react2.default.createElement(
-                        "p",
-                        { className: "" },
-                        news.nextStep
-                    ),
-                    _react2.default.createElement(
                         "div",
-                        { className: "row col" },
-                        _react2.default.createElement("img", { src: news.dateImage, alt: "Signing contract image", className: "img-fluid rounded max-width: 100%; height:auto; dates-img" }),
-                        _react2.default.createElement("img", { src: news.dateImage2, className: "img-fluid rounded max-width: 100%; height:auto; dates-img" })
-                    )
+                        null,
+                        _react2.default.createElement(
+                            "mark",
+                            { className: "" },
+                            "Next step:"
+                        ),
+                        _react2.default.createElement(
+                            "p",
+                            { className: "" },
+                            news.nextStep
+                        )
+                    ),
+                    _react2.default.createElement("img", { src: news.dateImage, alt: "Signing contract image", className: "img-thumbnail dates-img" })
                 );
             });
         }
@@ -19227,7 +19246,7 @@ exports = module.exports = __webpack_require__(3)(undefined);
 
 
 // module
-exports.push([module.i, ".dates-block::after {\n  content: \"\";\n  display: table;\n  clear: both;\n}\n.dates-block {\n  margin-top: 10px;\n}\n", ""]);
+exports.push([module.i, ".dates-block::after {\n  content: \"\";\n  display: table;\n  clear: both;\n}\n.dates-block {\n  margin-top: 10px;\n}\n.dates-img {\n  width:640px;\n  height:426px;\n}\n", ""]);
 
 // exports
 
@@ -19261,6 +19280,12 @@ module.exports = __webpack_require__.p + "d4a6a923407de599a4a2744d64f5afe9.jpg";
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "b4452eef73668766456809818418c557.jpg";
+
+/***/ }),
+/* 53 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "e648add247150abdecbb06fe4b2b7c8e.jpg";
 
 /***/ })
 /******/ ]);
