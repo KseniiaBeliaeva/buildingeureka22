@@ -22,7 +22,6 @@ export default class Menu extends React.Component {
         return (
             <div className="row" id="menu">
                 <nav className="navbar navbar-light bg-dark navbar-expand-md" id="nav_menu" role="navigation">
-                    
                     {menuItems.map((menuBlock) =>
                         <a href={menuBlock.link} key={menuBlock.menuItemName} className="navbar-nav nav-link nav_menu-link text-white">
                             {menuBlock.menuItemName}

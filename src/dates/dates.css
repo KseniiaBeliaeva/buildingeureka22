@@ -1,0 +1,8 @@
+.dates-block::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.dates-block {
+  margin-top: 10px;
+}

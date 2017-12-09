@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from "react-dom";
-import Container from "./container/container";
+import Houseplan from "./houseplan/houseplan";
 import Menu from "./menu/menu";
 import Wrapper from "./wrapper/wrapper";
 import './styles.css';
@@ -12,7 +12,7 @@ class Main extends React.Component {
             <div className="container">
                <Menu />
                 <Wrapper />
-                <Container /> 
+                <Houseplan /> 
             </div>
         );
     }
