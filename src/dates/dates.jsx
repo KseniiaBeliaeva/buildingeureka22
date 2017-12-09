@@ -60,10 +60,8 @@ export default class Dates extends React.Component {
                     <h3 className="text-success">{news.date}</h3>
                     <p>{news.dateText}</p>
                     <p className="">{news.nextStep}</p>
-                    <div className="row col">
                     <img src={news.dateImage} alt="Signing contract image" className="img-fluid rounded max-width: 100%; height:auto; dates-img" />
                     <img src={news.dateImage2} className="img-fluid rounded max-width: 100%; height:auto; dates-img" />
-                    </div>
                 </div>
             )
         );
