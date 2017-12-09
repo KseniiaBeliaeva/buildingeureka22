@@ -1464,6 +1464,17 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var menuItems = [{
+    menuItemName: "Eureka 22",
+    link: "index.html"
+}, {
+    menuItemName: "Updates",
+    link: "updates.html"
+}, {
+    menuItemName: "Photos",
+    link: "photos.html"
+}];
+
 var Menu = function (_React$Component) {
     _inherits(Menu, _React$Component);
 
@@ -1482,21 +1493,13 @@ var Menu = function (_React$Component) {
                 _react2.default.createElement(
                     "nav",
                     { className: "navbar navbar-light bg-dark navbar-expand-md", id: "nav_menu", role: "navigation" },
-                    _react2.default.createElement(
-                        "a",
-                        { href: "index.html", className: "navbar-nav nav-link nav_menu-link text-white justify-content-start" },
-                        "Eureka 22"
-                    ),
-                    _react2.default.createElement(
-                        "a",
-                        { href: "updates.html", className: "navbar-nav nav-link nav_menu-link text-white" },
-                        "Updates"
-                    ),
-                    _react2.default.createElement(
-                        "a",
-                        { href: "photos.html", className: "navbar-nav nav-link nav_menu-link text-white " },
-                        "Photos"
-                    )
+                    menuItems.map(function (menuBlock) {
+                        return _react2.default.createElement(
+                            "a",
+                            { href: menuBlock.link, key: menuBlock.menuItemName, className: "navbar-nav nav-link nav_menu-link text-white" },
+                            menuBlock.menuItemName
+                        );
+                    })
                 )
             );
         }

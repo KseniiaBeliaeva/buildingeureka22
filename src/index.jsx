@@ -13,7 +13,7 @@ class Main extends React.Component {
                <Menu />
                 <Wrapper />
                 <Container /> 
-            </div>    
+            </div>
         );
     }
 }
