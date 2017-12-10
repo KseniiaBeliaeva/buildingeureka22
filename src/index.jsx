@@ -4,6 +4,7 @@ import Houseplan from "./houseplan/houseplan";
 import Menu from "./menu/menu";
 import Wrapper from "./wrapper/wrapper";
 import './styles.css';
+import Footer from "./footer/footer";
 
 
 class Main extends React.Component {
@@ -13,6 +14,7 @@ class Main extends React.Component {
                <Menu />
                 <Wrapper />
                 <Houseplan /> 
+                <Footer />
             </div>
         );
     }

@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import Menu from "../menu/menu";
 import "../styles.css";
 import Dates from "../dates/dates";
+import Footer from "../footer/footer";
 
 class Updates extends React.Component {
     render() {
@@ -11,7 +12,8 @@ class Updates extends React.Component {
                 <Menu />
                 <div className="row">
                     <Dates />
-                </div>    
+                </div>   
+                <Footer />
             </div>
         )
     }
