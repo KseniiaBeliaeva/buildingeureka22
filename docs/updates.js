@@ -19187,6 +19187,10 @@ var _builders = __webpack_require__(55);
 
 var _builders2 = _interopRequireDefault(_builders);
 
+var _colorSel = __webpack_require__(56);
+
+var _colorSel2 = _interopRequireDefault(_colorSel);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -19202,6 +19206,11 @@ var updNews = [{
     dateText: "Signing contract with HomeBuyers Centre",
     nextStep: "Waiting for Titling in May-June 2017",
     dateImage: _signingContract2.default
+}, {
+    date: "12.02.17",
+    dateText: "Color selection appointment",
+    nextStep: "Waiting for Titling in May-June 2017",
+    dateImage: _colorSel2.default
 }, {
     date: "01.07.17",
     dateText: "Titling reshedule",
@@ -19255,7 +19264,7 @@ var Dates = function (_React$Component) {
                         { className: "alert alert-info dates-block", key: news.date },
                         _react2.default.createElement(
                             "h3",
-                            { className: "text-success" },
+                            { className: "text-info" },
                             news.date
                         ),
                         _react2.default.createElement(
@@ -19374,6 +19383,12 @@ module.exports = __webpack_require__.p + "b4452eef73668766456809818418c557.jpg";
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "e648add247150abdecbb06fe4b2b7c8e.jpg";
+
+/***/ }),
+/* 56 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "5e95331f44b9826c0ef1bb5a825864fa.jpg";
 
 /***/ })
 /******/ ]);

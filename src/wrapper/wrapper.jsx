@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from "react-dom";
 import "./wrapper.css";
-import eureka from "./eureka.jpg";
+import eureka from "./eurekarye.jpg";
 
 var imgText = {
     imgLink: eureka,

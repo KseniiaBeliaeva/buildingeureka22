@@ -8,6 +8,7 @@ import streetsign from "./streetsign.jpg";
 import upd1 from "./upd1.jpg";
 import upd2 from "./upd2.jpg";
 import builders from "./builders.jpg";
+import colorSelection from "./colorSel1.jpg";
 
 var updNews = [
     {
@@ -15,6 +16,12 @@ var updNews = [
     dateText: "Signing contract with HomeBuyers Centre",
     nextStep: "Waiting for Titling in May-June 2017",
     dateImage: contractimg,
+    },
+    {
+        date: "12.02.17",
+        dateText: "Color selection appointment",
+        nextStep: "Waiting for Titling in May-June 2017",
+        dateImage: colorSelection,
     },
     {
         date: "01.07.17",
@@ -66,7 +73,7 @@ export default class Dates extends React.Component {
             updNews.map((news) =>    
                 <div className="col-sm-6">
                     <div className="alert alert-info dates-block" key={news.date}>
-                    <h3 className="text-success">{news.date}</h3>
+                        <h3 className="text-info">{news.date}</h3>
                     <mark className="">News:</mark>
                     <p>{news.dateText}</p>
                     <div>

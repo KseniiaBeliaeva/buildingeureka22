@@ -19269,9 +19269,9 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 __webpack_require__(43);
 
-var _eureka = __webpack_require__(45);
+var _eurekarye = __webpack_require__(45);
 
-var _eureka2 = _interopRequireDefault(_eureka);
+var _eurekarye2 = _interopRequireDefault(_eurekarye);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -19282,7 +19282,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var imgText = {
-    imgLink: _eureka2.default,
+    imgLink: _eurekarye2.default,
     text: "Hilop ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt" + "ut labore et dolore magna aliqua.Condimentum lacinia quis vel eros donec.Vulputate enim " + " nulla aliquet porttitor lacus luctus accumsan.Aliquet eget sit amet tellus cras adipiscing " + "enim.Pulvinar mattis nunc sed blandit libero.Quis hendrerit dolor magna eget est.Eu nisl" + " nunc mi ipsum.Blandit aliquam etiam erat velit scelerisque in.Amet facilisis magna etiam " + "tempor orci eu lobortis elementum nibh.Mattis ullamcorper velit sed ullamcorper morbi " + "tincidunt ornare massa.Dis parturient montes nascetur ridiculus mus mauris vitae ultricies. " + "Blandit massa enim nec dui nunc mattis."
 };
 
@@ -19373,7 +19373,7 @@ exports.push([module.i, "img {\n    width: 100%;\n}\n.col-sm-6 {\n margin: 15px 
 /* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "3b1b8da73778a0da60a489c5e78b863d.jpg";
+module.exports = __webpack_require__.p + "558659f98327e2920806e9e44d88bef1.jpg";
 
 /***/ })
 /******/ ]);
