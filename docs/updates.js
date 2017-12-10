@@ -18967,7 +18967,7 @@ exports.i(__webpack_require__(35), "");
 exports.i(__webpack_require__(36), "");
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".footer{\n  font-family: 'Dancing Script', cursive;\n  font-size: 150%;\n}\nmark {\nbackground-color: #17a2b84d;\n}", ""]);
 
 // exports
 
@@ -18995,7 +18995,7 @@ exports = module.exports = __webpack_require__(3)(undefined);
 
 
 // module
-exports.push([module.i, "\n.footer-text {\n  text-align: center;\nvertical-align: middle;\n line-height: 51px;\n margin-bottom: 0;\n}", ""]);
+exports.push([module.i, "\n.footer-text {\n  text-align: center;\nvertical-align: middle;\n line-height: 51px;\n margin-bottom: 0;\n\n}", ""]);
 
 // exports
 
@@ -19048,7 +19048,7 @@ var Footer = function (_React$Component) {
                 { className: "container-fluid text-center bg-light footer" },
                 _react2.default.createElement(
                     "p",
-                    { className: "footer-block text-dark footer-text" },
+                    { className: "footer-block text-info footer-text" },
                     "Kseniia B., 2017"
                 )
             );
@@ -19191,6 +19191,10 @@ var _colorSel = __webpack_require__(56);
 
 var _colorSel2 = _interopRequireDefault(_colorSel);
 
+var _colorSel3 = __webpack_require__(58);
+
+var _colorSel4 = _interopRequireDefault(_colorSel3);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -19205,7 +19209,7 @@ var updNews = [{
     date: "01.02.17",
     dateText: "Signing contract with HomeBuyers Centre",
     nextStep: "Waiting for Titling in May-June 2017",
-    dateImage: _signingContract2.default
+    dateImage: _colorSel4.default
 }, {
     date: "12.02.17",
     dateText: "Color selection appointment",
@@ -19238,7 +19242,7 @@ var updNews = [{
     dateImage: _upd2.default
 }, "dateImage", _upd4.default), {
     date: "07.12.17",
-    dateText: "Builder's paper preparations",
+    dateText: "Builder's paper work",
     nextStep: "Waiting for start in 2-3 months",
     dateImage: _builders2.default
 }];
@@ -19389,6 +19393,13 @@ module.exports = __webpack_require__.p + "e648add247150abdecbb06fe4b2b7c8e.jpg";
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "5e95331f44b9826c0ef1bb5a825864fa.jpg";
+
+/***/ }),
+/* 57 */,
+/* 58 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "2afcf403da3d9d2680992c524e2b29b9.jpg";
 
 /***/ })
 /******/ ]);

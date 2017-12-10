@@ -18967,7 +18967,7 @@ exports.i(__webpack_require__(35), "");
 exports.i(__webpack_require__(36), "");
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".footer{\n  font-family: 'Dancing Script', cursive;\n  font-size: 150%;\n}\nmark {\nbackground-color: #17a2b84d;\n}", ""]);
 
 // exports
 
@@ -18995,7 +18995,7 @@ exports = module.exports = __webpack_require__(3)(undefined);
 
 
 // module
-exports.push([module.i, "\n.footer-text {\n  text-align: center;\nvertical-align: middle;\n line-height: 51px;\n margin-bottom: 0;\n}", ""]);
+exports.push([module.i, "\n.footer-text {\n  text-align: center;\nvertical-align: middle;\n line-height: 51px;\n margin-bottom: 0;\n\n}", ""]);
 
 // exports
 
@@ -19048,7 +19048,7 @@ var Footer = function (_React$Component) {
                 { className: "container-fluid text-center bg-light footer" },
                 _react2.default.createElement(
                     "p",
-                    { className: "footer-block text-dark footer-text" },
+                    { className: "footer-block text-info footer-text" },
                     "Kseniia B., 2017"
                 )
             );

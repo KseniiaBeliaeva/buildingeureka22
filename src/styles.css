@@ -2,3 +2,10 @@
 @import url("./menu/menu.css");
 @import url("./logo/logo.css");
 @import url("./footer/footer.css");
+.footer{
+  font-family: 'Dancing Script', cursive;
+  font-size: 150%;
+}
+mark {
+background-color: #17a2b84d;
+}

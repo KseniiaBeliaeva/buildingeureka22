@@ -9,13 +9,14 @@ import upd1 from "./upd1.jpg";
 import upd2 from "./upd2.jpg";
 import builders from "./builders.jpg";
 import colorSelection from "./colorSel1.jpg";
+import colorSelection2 from "./colorSel2.jpg";
 
 var updNews = [
     {
     date: "01.02.17",
     dateText: "Signing contract with HomeBuyers Centre",
     nextStep: "Waiting for Titling in May-June 2017",
-    dateImage: contractimg,
+    dateImage: colorSelection2,
     },
     {
         date: "12.02.17",
@@ -59,7 +60,7 @@ var updNews = [
     },
     {
         date: "07.12.17",
-        dateText: "Builder's paper preparations",
+        dateText: "Builder's paper work",
         nextStep: "Waiting for start in 2-3 months",
         dateImage: builders,
     },
