@@ -6,6 +6,6 @@
   font-family: 'Dancing Script', cursive;
   font-size: 150%;
 }
-mark {
-background-color: #17a2b84d;
+span {
+ text-decoration: underline;
 }

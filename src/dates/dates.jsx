@@ -14,13 +14,13 @@ import colorSelection2 from "./colorSel2.jpg";
 var updNews = [
     {
     date: "01.02.17",
-    dateText: "Signing contract with HomeBuyers Centre",
+    dateText: "Signing a contract with HomeBuyers Centre",
     nextStep: "Waiting for Titling in May-June 2017",
     dateImage: colorSelection2,
     },
     {
         date: "12.02.17",
-        dateText: "Color selection appointment",
+        dateText: "Colour selection appointment",
         nextStep: "Waiting for Titling in May-June 2017",
         dateImage: colorSelection,
     },
@@ -35,7 +35,7 @@ var updNews = [
         dateText: "Titling reshedule",
         nextStep: "All main construction works complete, final authority approval" +
             "being sought.Forecast title date: mid-December 2017." +
-             "Titling delayed due to a delay with authority approvals.",
+             " Titling delayed due to a delay with authority approvals.",
         dateImage: titleimg,
     },
     {
@@ -75,10 +75,10 @@ export default class Dates extends React.Component {
                 <div className="col-sm-6">
                     <div className="alert alert-info dates-block" key={news.date}>
                         <h3 className="text-info">{news.date}</h3>
-                    <mark className="">News:</mark>
+                    <span className="">News:</span>
                     <p>{news.dateText}</p>
                     <div>
-                        <mark className="">Next step:</mark>
+                        <span className="">Next step:</span>
                         <p className="">{news.nextStep}</p>
                     </div>    
                     <img src={news.dateImage} alt="Signing contract image" className="img-thumbnail dates-img" />

@@ -18967,7 +18967,7 @@ exports.i(__webpack_require__(35), "");
 exports.i(__webpack_require__(36), "");
 
 // module
-exports.push([module.i, ".footer{\n  font-family: 'Dancing Script', cursive;\n  font-size: 150%;\n}\nmark {\nbackground-color: #17a2b84d;\n}", ""]);
+exports.push([module.i, ".footer{\n  font-family: 'Dancing Script', cursive;\n  font-size: 150%;\n}\nspan {\n text-decoration: underline;\n}", ""]);
 
 // exports
 

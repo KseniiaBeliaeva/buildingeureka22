@@ -18967,7 +18967,7 @@ exports.i(__webpack_require__(35), "");
 exports.i(__webpack_require__(36), "");
 
 // module
-exports.push([module.i, ".footer{\n  font-family: 'Dancing Script', cursive;\n  font-size: 150%;\n}\nmark {\nbackground-color: #17a2b84d;\n}", ""]);
+exports.push([module.i, ".footer{\n  font-family: 'Dancing Script', cursive;\n  font-size: 150%;\n}\nspan {\n text-decoration: underline;\n}", ""]);
 
 // exports
 
@@ -19191,7 +19191,7 @@ var _colorSel = __webpack_require__(56);
 
 var _colorSel2 = _interopRequireDefault(_colorSel);
 
-var _colorSel3 = __webpack_require__(58);
+var _colorSel3 = __webpack_require__(57);
 
 var _colorSel4 = _interopRequireDefault(_colorSel3);
 
@@ -19207,12 +19207,12 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 var updNews = [{
     date: "01.02.17",
-    dateText: "Signing contract with HomeBuyers Centre",
+    dateText: "Signing a contract with HomeBuyers Centre",
     nextStep: "Waiting for Titling in May-June 2017",
     dateImage: _colorSel4.default
 }, {
     date: "12.02.17",
-    dateText: "Color selection appointment",
+    dateText: "Colour selection appointment",
     nextStep: "Waiting for Titling in May-June 2017",
     dateImage: _colorSel2.default
 }, {
@@ -19223,7 +19223,7 @@ var updNews = [{
 }, {
     date: "01.09.17",
     dateText: "Titling reshedule",
-    nextStep: "All main construction works complete, final authority approval" + "being sought.Forecast title date: mid-December 2017." + "Titling delayed due to a delay with authority approvals.",
+    nextStep: "All main construction works complete, final authority approval" + "being sought.Forecast title date: mid-December 2017." + " Titling delayed due to a delay with authority approvals.",
     dateImage: _title2.default
 }, {
     date: "12.10.17",
@@ -19272,7 +19272,7 @@ var Dates = function (_React$Component) {
                             news.date
                         ),
                         _react2.default.createElement(
-                            "mark",
+                            "span",
                             { className: "" },
                             "News:"
                         ),
@@ -19285,7 +19285,7 @@ var Dates = function (_React$Component) {
                             "div",
                             null,
                             _react2.default.createElement(
-                                "mark",
+                                "span",
                                 { className: "" },
                                 "Next step:"
                             ),
@@ -19395,8 +19395,7 @@ module.exports = __webpack_require__.p + "e648add247150abdecbb06fe4b2b7c8e.jpg";
 module.exports = __webpack_require__.p + "5e95331f44b9826c0ef1bb5a825864fa.jpg";
 
 /***/ }),
-/* 57 */,
-/* 58 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "2afcf403da3d9d2680992c524e2b29b9.jpg";
