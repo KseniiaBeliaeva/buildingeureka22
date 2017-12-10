@@ -9,7 +9,9 @@ class Updates extends React.Component {
         return (
             <div className="container">
                 <Menu />
-                <Dates />
+                <div className="row">
+                    <Dates />
+                </div>    
             </div>
         )
     }

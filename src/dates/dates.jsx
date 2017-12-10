@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./dates.css";
+import "../styles.css";
 import contractimg from "./signing-contract.jpg";
 import titleimg from "./title.jpg";
 import streetsign from "./streetsign.jpg";
@@ -51,7 +52,7 @@ var updNews = [
     },
     {
         date: "07.12.17",
-        dateText: "Paper preparations",
+        dateText: "Builder's paper preparations",
         nextStep: "Waiting for start in 2-3 months",
         dateImage: builders,
     },
@@ -62,8 +63,9 @@ var updNews = [
 export default class Dates extends React.Component { 
     render() { 
         return (
-            updNews.map((news) =>
-                <div className="container alert alert-success dates-block" key={news.date}>
+            updNews.map((news) =>    
+                <div className="col-sm-6">
+                    <div className="alert alert-info dates-block" key={news.date}>
                     <h3 className="text-success">{news.date}</h3>
                     <mark className="">News:</mark>
                     <p>{news.dateText}</p>
@@ -72,8 +74,9 @@ export default class Dates extends React.Component {
                         <p className="">{news.nextStep}</p>
                     </div>    
                     <img src={news.dateImage} alt="Signing contract image" className="img-thumbnail dates-img" />
-                </div>
-            )
+                    </div>
+                </div>    
+            ) 
         );
     }
 }

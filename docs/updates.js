@@ -303,9 +303,9 @@ module.exports = emptyFunction;
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(19);
-} else {
   module.exports = __webpack_require__(20);
+} else {
+  module.exports = __webpack_require__(21);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
@@ -552,9 +552,9 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(22);
+  module.exports = __webpack_require__(23);
 } else {
-  module.exports = __webpack_require__(25);
+  module.exports = __webpack_require__(26);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
@@ -616,7 +616,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(30);
+var	fixUrls = __webpack_require__(31);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -1077,7 +1077,7 @@ module.exports = warning;
 if (process.env.NODE_ENV !== 'production') {
   var invariant = __webpack_require__(8);
   var warning = __webpack_require__(9);
-  var ReactPropTypesSecret = __webpack_require__(21);
+  var ReactPropTypesSecret = __webpack_require__(22);
   var loggedTypeFailures = {};
 }
 
@@ -1376,7 +1376,7 @@ module.exports = shallowEqual;
  * 
  */
 
-var isTextNode = __webpack_require__(23);
+var isTextNode = __webpack_require__(24);
 
 /*eslint-disable no-bitwise */
 
@@ -1442,7 +1442,7 @@ exports = module.exports = __webpack_require__(3)(undefined);
 
 
 // module
-exports.push([module.i, "\n#nav_menu {\n        background-color: #e3f2fd;\n        width: 100%;\n        float: right;\n    }\n", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -1463,6 +1463,37 @@ exports.push([module.i, ".houseplan-brochure {\n    margin-bottom: 15px;\n}", ""
 
 /***/ }),
 /* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(34);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {"hmr":true}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(7)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../node_modules/css-loader/index.js!./styles.css", function() {
+			var newContent = require("!!../node_modules/css-loader/index.js!./styles.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1490,7 +1521,7 @@ isValidElement:K,version:"16.2.0",__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_F
 
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2855,7 +2886,7 @@ module.exports = react;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2874,7 +2905,7 @@ module.exports = ReactPropTypesSecret;
 
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3110,7 +3141,7 @@ Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",r
 
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3125,7 +3156,7 @@ Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",r
  * @typechecks
  */
 
-var isNode = __webpack_require__(24);
+var isNode = __webpack_require__(25);
 
 /**
  * @param {*} object The object to check.
@@ -3138,7 +3169,7 @@ function isTextNode(object) {
 module.exports = isTextNode;
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3166,7 +3197,7 @@ function isNode(object) {
 module.exports = isNode;
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3200,8 +3231,8 @@ var containsNode = __webpack_require__(15);
 var focusNode = __webpack_require__(16);
 var emptyObject = __webpack_require__(5);
 var checkPropTypes = __webpack_require__(10);
-var hyphenateStyleName = __webpack_require__(26);
-var camelizeStyleName = __webpack_require__(28);
+var hyphenateStyleName = __webpack_require__(27);
+var camelizeStyleName = __webpack_require__(29);
 
 /**
  * WARNING: DO NOT manually require this module.
@@ -18568,7 +18599,7 @@ module.exports = reactDom;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18583,7 +18614,7 @@ module.exports = reactDom;
 
 
 
-var hyphenate = __webpack_require__(27);
+var hyphenate = __webpack_require__(28);
 
 var msPattern = /^ms-/;
 
@@ -18610,7 +18641,7 @@ function hyphenateStyleName(string) {
 module.exports = hyphenateStyleName;
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18646,7 +18677,7 @@ function hyphenate(string) {
 module.exports = hyphenate;
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18661,7 +18692,7 @@ module.exports = hyphenate;
 
 
 
-var camelize = __webpack_require__(29);
+var camelize = __webpack_require__(30);
 
 var msPattern = /^-ms-/;
 
@@ -18689,7 +18720,7 @@ function camelizeStyleName(string) {
 module.exports = camelizeStyleName;
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18724,7 +18755,7 @@ function camelize(string) {
 module.exports = camelize;
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, exports) {
 
 
@@ -18819,7 +18850,7 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18839,7 +18870,7 @@ var _reactDom = __webpack_require__(6);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-__webpack_require__(32);
+__webpack_require__(33);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -18855,9 +18886,6 @@ var menuItems = [{
 }, {
     menuItemName: "Updates",
     link: "updates.html"
-}, {
-    menuItemName: "Photos",
-    link: "photos.html"
 }];
 
 var Menu = function (_React$Component) {
@@ -18872,12 +18900,11 @@ var Menu = function (_React$Component) {
     _createClass(Menu, [{
         key: "render",
         value: function render() {
-            return _react2.default.createElement(
-                "div",
-                { className: "row", id: "menu" },
+            return (
+                // <div className="row" id="menu">
                 _react2.default.createElement(
                     "nav",
-                    { className: "navbar navbar-light bg-dark navbar-expand-md", id: "nav_menu", role: "navigation" },
+                    { className: "navbar navbar-light bg-dark navbar-expand-md justify-content-start", id: "nav_menu", role: "navigation" },
                     menuItems.map(function (menuBlock) {
                         return _react2.default.createElement(
                             "a",
@@ -18886,6 +18913,8 @@ var Menu = function (_React$Component) {
                         );
                     })
                 )
+                // </div>
+
             );
         }
     }]);
@@ -18896,7 +18925,7 @@ var Menu = function (_React$Component) {
 exports.default = Menu;
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
@@ -18918,37 +18947,6 @@ if(false) {
 	if(!content.locals) {
 		module.hot.accept("!!../../node_modules/css-loader/index.js!./menu.css", function() {
 			var newContent = require("!!../../node_modules/css-loader/index.js!./menu.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 33 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(34);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {"hmr":true}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(7)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../node_modules/css-loader/index.js!./styles.css", function() {
-			var newContent = require("!!../node_modules/css-loader/index.js!./styles.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -19012,11 +19010,11 @@ var _reactDom = __webpack_require__(6);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _menu = __webpack_require__(31);
+var _menu = __webpack_require__(32);
 
 var _menu2 = _interopRequireDefault(_menu);
 
-__webpack_require__(33);
+__webpack_require__(19);
 
 var _dates = __webpack_require__(45);
 
@@ -19046,7 +19044,11 @@ var Updates = function (_React$Component) {
                 "div",
                 { className: "container" },
                 _react2.default.createElement(_menu2.default, null),
-                _react2.default.createElement(_dates2.default, null)
+                _react2.default.createElement(
+                    "div",
+                    { className: "row" },
+                    _react2.default.createElement(_dates2.default, null)
+                )
             );
         }
     }]);
@@ -19078,6 +19080,8 @@ var _reactDom = __webpack_require__(6);
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
 __webpack_require__(46);
+
+__webpack_require__(19);
 
 var _signingContract = __webpack_require__(48);
 
@@ -19145,7 +19149,7 @@ var updNews = [{
     dateImage: _upd2.default
 }, "dateImage", _upd4.default), {
     date: "07.12.17",
-    dateText: "Paper preparations",
+    dateText: "Builder's paper preparations",
     nextStep: "Waiting for start in 2-3 months",
     dateImage: _builders2.default
 }];
@@ -19165,37 +19169,41 @@ var Dates = function (_React$Component) {
             return updNews.map(function (news) {
                 return _react2.default.createElement(
                     "div",
-                    { className: "container alert alert-success dates-block", key: news.date },
-                    _react2.default.createElement(
-                        "h3",
-                        { className: "text-success" },
-                        news.date
-                    ),
-                    _react2.default.createElement(
-                        "mark",
-                        { className: "" },
-                        "News:"
-                    ),
-                    _react2.default.createElement(
-                        "p",
-                        null,
-                        news.dateText
-                    ),
+                    { className: "col-sm-6" },
                     _react2.default.createElement(
                         "div",
-                        null,
+                        { className: "alert alert-info dates-block", key: news.date },
+                        _react2.default.createElement(
+                            "h3",
+                            { className: "text-success" },
+                            news.date
+                        ),
                         _react2.default.createElement(
                             "mark",
                             { className: "" },
-                            "Next step:"
+                            "News:"
                         ),
                         _react2.default.createElement(
                             "p",
-                            { className: "" },
-                            news.nextStep
-                        )
-                    ),
-                    _react2.default.createElement("img", { src: news.dateImage, alt: "Signing contract image", className: "img-thumbnail dates-img" })
+                            null,
+                            news.dateText
+                        ),
+                        _react2.default.createElement(
+                            "div",
+                            null,
+                            _react2.default.createElement(
+                                "mark",
+                                { className: "" },
+                                "Next step:"
+                            ),
+                            _react2.default.createElement(
+                                "p",
+                                { className: "" },
+                                news.nextStep
+                            )
+                        ),
+                        _react2.default.createElement("img", { src: news.dateImage, alt: "Signing contract image", className: "img-thumbnail dates-img" })
+                    )
                 );
             });
         }
