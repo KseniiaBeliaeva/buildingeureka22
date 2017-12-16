@@ -19183,9 +19183,9 @@ var _upd3 = __webpack_require__(54);
 
 var _upd4 = _interopRequireDefault(_upd3);
 
-var _builders = __webpack_require__(55);
+var _construction = __webpack_require__(55);
 
-var _builders2 = _interopRequireDefault(_builders);
+var _construction2 = _interopRequireDefault(_construction);
 
 var _colorSel = __webpack_require__(56);
 
@@ -19244,7 +19244,7 @@ var updNews = [{
     date: "07.12.17",
     dateText: "Builder's paper work",
     nextStep: "Waiting for start in 2-3 months",
-    dateImage: _builders2.default
+    dateImage: _construction2.default
 }];
 
 var Dates = function (_React$Component) {
@@ -19386,7 +19386,7 @@ module.exports = __webpack_require__.p + "b4452eef73668766456809818418c557.jpg";
 /* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "e648add247150abdecbb06fe4b2b7c8e.jpg";
+module.exports = __webpack_require__.p + "938a19a7ad35328c5b68cbbc443545ba.jpg";
 
 /***/ }),
 /* 56 */

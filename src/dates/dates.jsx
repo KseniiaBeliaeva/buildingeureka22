@@ -7,7 +7,7 @@ import titleimg from "./title.jpg";
 import streetsign from "./streetsign.jpg";
 import upd1 from "./upd1.jpg";
 import upd2 from "./upd2.jpg";
-import builders from "./builders.jpg";
+import construction from "./construction.jpg";
 import colorSelection from "./colorSel1.jpg";
 import colorSelection2 from "./colorSel2.jpg";
 
@@ -62,7 +62,7 @@ var updNews = [
         date: "07.12.17",
         dateText: "Builder's paper work",
         nextStep: "Waiting for start in 2-3 months",
-        dateImage: builders,
+        dateImage: construction,
     },
 
     
