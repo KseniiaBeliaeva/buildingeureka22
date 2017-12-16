@@ -19195,6 +19195,10 @@ var _colorSel3 = __webpack_require__(57);
 
 var _colorSel4 = _interopRequireDefault(_colorSel3);
 
+var _settlement = __webpack_require__(59);
+
+var _settlement2 = _interopRequireDefault(_settlement);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -19245,6 +19249,11 @@ var updNews = [{
     dateText: "Builder's paper work",
     nextStep: "Waiting for start in 2-3 months",
     dateImage: _construction2.default
+}, {
+    date: "18.12.17",
+    dateText: "Settlement",
+    dateImage: _settlement2.default,
+    nextStep: "Waiting for start in 2-3 months"
 }];
 
 var Dates = function (_React$Component) {
@@ -19399,6 +19408,13 @@ module.exports = __webpack_require__.p + "5e95331f44b9826c0ef1bb5a825864fa.jpg";
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "2afcf403da3d9d2680992c524e2b29b9.jpg";
+
+/***/ }),
+/* 58 */,
+/* 59 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "bec747d604787b86ade0989d1a5293dd.jpg";
 
 /***/ })
 /******/ ]);

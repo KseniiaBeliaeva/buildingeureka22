@@ -10,6 +10,7 @@ import upd2 from "./upd2.jpg";
 import construction from "./construction.jpg";
 import colorSelection from "./colorSel1.jpg";
 import colorSelection2 from "./colorSel2.jpg";
+import settlement from "./settlement.jpg";
 
 var updNews = [
     {
@@ -63,6 +64,12 @@ var updNews = [
         dateText: "Builder's paper work",
         nextStep: "Waiting for start in 2-3 months",
         dateImage: construction,
+    },
+    {
+        date: "18.12.17",
+        dateText: "Settlement",
+        dateImage: settlement,
+        nextStep: "Waiting for start in 2-3 months",
     },
 
     
